@@ -1,0 +1,81 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>מפריח הבועות</title>
+    <meta name="description" content="משחק להתאמת אלמנטים מאותה קבוצה" />
+    <meta name="keywords" content="" />
+    <meta name="פותח על ידי" content="חן בלום, אפרת בנעטיה ורז פיגנבלט" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+			<a href=#>
+				<img id="logo"  src="images/Slogo.png" />  <!--הלוגו של המשחק שלכם-->
+				<p>מפריח הבועות</p>
+			</a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+		<div id="aboutDiv" class="popUp bounceInDown hide AboutFrame">
+			<a class="closeAbout">
+				<img src="images/X.png" />
+			</a>
+			<article>
+				<h1>
+
+					<img src="images/Logo.png" />	  אודות מפריח הבועות
+				</h1>
+				<p>
+					אפיון ופיתוח: אפרת בנעטיה חן בלום ורז פיגנבלט
+				</p>
+				<p>
+					אופיין ופותח במסגרת פרויקט בקורסים:
+					<br />סביבות לימוד אינטראקטיביות 1 + תכנות אנטראקציה ואנימציה 1
+					<br />תשפ"א
+				</p>
+				<a href="https://www.hit.ac.il/telem/overview" />
+				<p>
+					<img src="images/HitHolonLogo.svg" width="70" />
+				</p>
+				<h2>הפקולטה לטכנולוגיות למידה</h2>
+				<a />
+			</article>
+		</div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+			<a class="closeHowToPlay">
+				<img src="images/X.png" />
+			</a>
+			<p>
+				<img src="images/instractions.gif" height="310" />
+			</p>
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="BubblesV31.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
