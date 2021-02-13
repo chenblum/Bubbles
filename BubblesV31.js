@@ -4105,7 +4105,7 @@ if (reversed == null) { reversed = false; }
 		}
 		
 		function backToPlay() { //פונקציה המופעלת בעת לחיצה על כפתור חזרה למשחק
-			setInterval(countback, 1000) // הפעלת הטיימר מחדש
+			mytime=setInterval(countback, 1000) // הפעלת הטיימר מחדש
 			pauseScreen.pauseContinue.removeEventListener('mouseover', overbackToPlay); //הסרת מאזינים לכפתור
 			pauseScreen.pauseContinue.removeEventListener('mouseout', outbackToPlay);
 			stage.removeChild(pauseScreen) //הסרת מסך הפסקה
@@ -4634,15 +4634,15 @@ lib.properties = {
 	color: "#CCD9EF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/BubblesV31_atlas_1.png?1613148152517", id:"BubblesV31_atlas_1"},
-		{src:"sounds/animation.mp3?1613148152733", id:"animation"},
-		{src:"sounds/currect.mp3?1613148152733", id:"currect"},
-		{src:"sounds/pop.mp3?1613148152733", id:"pop"},
-		{src:"sounds/Yes.mp3?1613148152733", id:"Yes"},
-		{src:"sounds/No.mp3?1613148152733", id:"No"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1613148152733", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1613148152733", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/combobox.js?1613148152733", id:"an.ComboBox"}
+		{src:"images/BubblesV31_atlas_1.png?1613197876868", id:"BubblesV31_atlas_1"},
+		{src:"sounds/animation.mp3?1613197877095", id:"animation"},
+		{src:"sounds/currect.mp3?1613197877095", id:"currect"},
+		{src:"sounds/pop.mp3?1613197877095", id:"pop"},
+		{src:"sounds/Yes.mp3?1613197877095", id:"Yes"},
+		{src:"sounds/No.mp3?1613197877095", id:"No"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1613197877095", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1613197877095", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/combobox.js?1613197877095", id:"an.ComboBox"}
 	],
 	preloads: []
 };
